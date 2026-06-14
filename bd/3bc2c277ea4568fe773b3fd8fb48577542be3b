@@ -1,0 +1,23 @@
+README.md
+  s_af78f923ff2d56::t_cd0e763ffa2966 32-44
+.gitignore
+  s_af78f923ff2d56::t_f16c51a4815491 6
+src/data.ts
+  s_af78f923ff2d56::t_6d2cb88603c0f0 286-287
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "bd3bc2c277ea4568fe773b3fd8fb48577542be3b",
+  "prompts": {},
+  "sessions": {
+    "s_af78f923ff2d56": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "498708af-efd6-43e8-9c48-93d9306ce56a",
+        "model": "default"
+      },
+      "human_author": "GeeksikhSecurity <gurvinder@sayvainc.com>"
+    }
+  }
+}
