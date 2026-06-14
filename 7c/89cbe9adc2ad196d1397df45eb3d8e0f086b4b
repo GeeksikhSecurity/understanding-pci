@@ -1,0 +1,21 @@
+.github/workflows/vercel-deploy.yml
+  s_af78f923ff2d56::t_49e8a610e2426b 1-28
+README.md
+  s_af78f923ff2d56::t_d2ad8572bf7032 37-38,40-42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "7c89cbe9adc2ad196d1397df45eb3d8e0f086b4b",
+  "prompts": {},
+  "sessions": {
+    "s_af78f923ff2d56": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "498708af-efd6-43e8-9c48-93d9306ce56a",
+        "model": "default"
+      },
+      "human_author": "GeeksikhSecurity <gurvinder@sayvainc.com>"
+    }
+  }
+}
