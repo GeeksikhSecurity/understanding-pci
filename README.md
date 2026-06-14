@@ -34,9 +34,12 @@ npm run dev
 | | URL |
 |---|-----|
 | **Production** | https://understanding-pci.vercel.app |
-| **Vercel project** | [singhs-kaurs/understanding-pci](https://vercel.com/singhs-kaurs/understanding-pci) |
+| **GitHub** | https://github.com/GeeksikhSecurity/understanding-pci |
+| **Vercel project** | https://vercel.com/singhs-kaurs/understanding-pci |
 
-### Custom domain (next step)
+Pushes to `main` trigger a production deploy via GitHub Actions (`.github/workflows/vercel-deploy.yml`).
+
+### Custom domain (optional)
 
 1. In [Vercel project settings → Domains](https://vercel.com/singhs-kaurs/understanding-pci/settings/domains), add e.g. `pci.securityleader.ai`.
 2. Add the DNS record Vercel provides (CNAME or A).
