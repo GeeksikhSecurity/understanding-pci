@@ -39,6 +39,10 @@ npm run dev
 
 Pushes to `main` trigger a production deploy via GitHub Actions (`.github/workflows/vercel-deploy.yml`).
 
+**One-time setup:** Add a `VERCEL_TOKEN` secret in [GitHub repo settings → Secrets](https://github.com/GeeksikhSecurity/understanding-pci/settings/secrets/actions). Create a token at [vercel.com/account/tokens](https://vercel.com/account/tokens) with access to the `singhs-kaurs` team.
+
+Alternatively, connect the repo in [Vercel → Git settings](https://vercel.com/singhs-kaurs/understanding-pci/settings/git) (grant Vercel access to `understanding-pci` in GitHub App settings first).
+
 ### Custom domain (optional)
 
 1. In [Vercel project settings → Domains](https://vercel.com/singhs-kaurs/understanding-pci/settings/domains), add e.g. `pci.securityleader.ai`.
