@@ -37,33 +37,26 @@ npm run dev
 | **GitHub** | https://github.com/GeeksikhSecurity/understanding-pci |
 | **Vercel project** | https://vercel.com/singhs-kaurs/understanding-pci |
 
-Pushes to `main` trigger a production deploy via GitHub Actions (`.github/workflows/vercel-deploy.yml`).
-
-**One-time setup:** Add a `VERCEL_TOKEN` secret in [GitHub repo settings → Secrets](https://github.com/GeeksikhSecurity/understanding-pci/settings/secrets/actions). Create a token at [vercel.com/account/tokens](https://vercel.com/account/tokens) with access to the `singhs-kaurs` team.
-
-Alternatively, connect the repo in [Vercel → Git settings](https://vercel.com/singhs-kaurs/understanding-pci/settings/git) (grant Vercel access to `understanding-pci` in GitHub App settings first).
+Pushes to `main` auto-deploy to production via [Vercel Git integration](https://vercel.com/singhs-kaurs/understanding-pci/settings/git).
 
 ### Custom domain (optional)
 
 1. In [Vercel project settings → Domains](https://vercel.com/singhs-kaurs/understanding-pci/settings/domains), add e.g. `pci.securityleader.ai`.
 2. Add the DNS record Vercel provides (CNAME or A).
-3. Update `siteMeta.url` in `src/data.ts` and redeploy: `vercel deploy --prod --yes`
+3. Update `siteMeta.url` in `src/data.ts` and push to `main`.
 
 ## Deploy to Vercel (standalone)
 
 This is a **standalone site** — not embedded. Link to it from sayvainc.com, securityleader.ai, and similar pages under themes like "What is PCI?" or "Understanding PCI for small business."
 
+Push to `main` on GitHub — Vercel builds and deploys automatically. Config in `vercel.json` (build: `npm run build`, output: `dist`).
+
+For manual deploys from local:
+
 ```bash
 npm i -g vercel
-vercel
+vercel deploy --prod --yes
 ```
-
-Or push to Git and import in Vercel. Config in `vercel.json` (build: `npm run build`, output: `dist`).
-
-### Custom domain
-
-1. Add a domain in Vercel project settings (e.g. `pci.securityleader.ai`).
-2. Update `siteMeta.url` in `src/data.ts` to match — used in the printable checklist footer and SEO.
 
 ### Production notes
 
